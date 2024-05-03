@@ -54,7 +54,7 @@
                 />
                 <small id="helpId" class="form-text text-muted">Help text</small>
              </div>
-             <button on:click={(e) => {e.preventDefault();changeState('results');}}>Compute</button>
+             <button type="submit" on:click|preventDefault={() => changeState('results')}>Compute</button>
          </form>
          
     {/if}
