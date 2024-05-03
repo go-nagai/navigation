@@ -37,11 +37,9 @@
 <div>
     <p>Current State: {data?.state}</p>
     {#if data.state === 'results'}
-         <!-- content here -->
          {JSON.stringify(formdata)}
          <button on:click={() => changeState('form')}>Back</button>
     {:else}
-         <!-- else content here -->
          <form>
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
